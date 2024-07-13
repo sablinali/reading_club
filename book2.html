@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+
+    <title>Deep Rivers</title>
+  </head>
+  <body class="book-info">
+    <div class="image">
+      <img
+        src="./images/deeprivers.jpg"
+        alt="Deep Rivers"
+        id="bookPic"
+        width="300"
+        height="400"
+      />
+      <br />
+      <div>
+        <p class="borrowP">Find out if it is available to borrow:</p>
+        <br />
+        <button
+          class="borrow-popup-button"
+          id="borrow-button"
+          onclick="borrowFunction()"
+        >
+          Borrow now
+        </button>
+
+        <div class="popuptext" id="borrow-popup">
+          <p>Good news! This book is available to borrow now!</p>
+          <div class="popup-buttons">
+            <button class="cancel-button" onclick="cancelBorrow()">
+              Cancel
+            </button>
+            <button class="yes-borrow-button" onclick="confirmBorrow()">
+              Borrow
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="info">
+      <ul>
+        <li>ID: 2</li>
+        <br />
+        <li>Country: Peru</li>
+        <br />
+        <li>Title: "Deep Rivers"</li>
+        <br />
+        <li>Author: Jose Maria Arguedas</li>
+        <br />
+        <li>Genre: Novel</li>
+        <br />
+        <li>Year: 1958</li>
+        <br />
+        <li>
+          Summary: "Deep Rivers is a novel about an adolescent, Ernesto, in
+          Peruvian Andean society in the 1920s. Apart from the pressures of
+          growing up, Ernesto must come to terms with the antagonism between the
+          dominant white society to which he belongs racially, and the Quechua
+          society in which he was raised."
+        </li>
+        <br />
+        <li>
+          Prizes: Ricardo Palma National Award for the Promotion of Culture
+          (1959)
+        </li>
+        <br />
+        <li>
+          Recommendation: "You should read 'Deep Rivers' because it is a novel
+          to learn and understand the roots of Peruvian culture, its Andean and
+          indigenous identity and the evolution of its idiosincracy where
+          unfortunately, violence and cruelty prevail. This unjust reality is
+          also seen in other countries of our continent. Nevertheless, it has a
+          great human value and beautiful descriptions of Peruvian geography.
+          I'm sure you'll love it. Sablina."
+        </li>
+      </ul>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

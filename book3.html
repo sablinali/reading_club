@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+
+    <title>The Time Regulation Institute</title>
+  </head>
+  <body class="book-info">
+    <div class="image">
+      <img
+        src="./images/regulation_institute.jpg"
+        alt="The Time Regulation Institute"
+        width="300"
+        height="400"
+      />
+      <br />
+      <div>
+        <p class="borrowP">Find out if it is available to borrow:</p>
+        <br />
+        <button
+          class="borrow-popup-button"
+          id="borrow-button"
+          onclick="borrowFunction()"
+        >
+          Borrow now
+        </button>
+
+        <div class="popuptext" id="borrow-popup">
+          <p>Good news! This book is available to borrow now!</p>
+          <div class="popup-buttons">
+            <button class="cancel-button" onclick="cancelBorrow()">
+              Cancel
+            </button>
+            <button class="yes-borrow-button" onclick="confirmBorrow()">
+              Borrow
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="info">
+      <ul>
+        <li>ID: 3</li>
+        <br />
+        <li>Country: Turkiye</li>
+        <br />
+        <li>Title: "The Time Regulation Institute"</li>
+        <br />
+        <li>Author: Ahmet Hamdi Taspinar</li>
+        <br />
+        <li>Genre: Literary fiction</li>
+        <br />
+        <li>Year: 1961</li>
+        <br />
+        <li>
+          Summary: "At its center is Hayri Irdal, an infectiously charming
+          antihero who becomes entangled with an eccentric cast of characters—a
+          television mystic, a pharmacist who dabbles in alchemy, a dignitary
+          from the lost Ottoman Empire, a “clock whisperer”—at the Time
+          Regulation Institute, a vast organization that employs a hilariously
+          intricate system of fines for the purpose of changing all the clocks
+          in Turkiye to Western time. Recounted in sessions with his
+          psychoanalyst, the story of Hayri Irdal’s absurdist misadventures
+          plays out as a brilliant allegory of the collision of tradition and
+          modernity, of East and West, infused with a poignant blend of hope for
+          the promise of the future and nostalgia for a simpler time."
+        </li>
+        <br />
+        <li>Prizes: "Small Reading Club 2024 Annual Award"</li>
+        <br />
+        <li>Recommendation: "Recommended by Ceyda Blue"</li>
+      </ul>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

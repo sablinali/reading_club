@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+
+    <title>Liliana’s Invincible Summer</title>
+  </head>
+  <body class="book-info">
+    <div class="image">
+      <img
+        src="./images/lilianasinvinciblesummer.jpg"
+        alt="Liliana's Invincible Summer"
+        id="bookPic"
+        width="300"
+        height="400"
+      />
+      <br />
+      <div>
+        <p class="borrowP">Find out if it is available to borrow:</p>
+        <br />
+        <button
+          class="borrow-popup-button"
+          id="borrow-button"
+          onclick="borrowFunction()"
+        >
+          Borrow now
+        </button>
+
+        <div class="popuptext" id="borrow-popup">
+          <p>Good news! This book is available to borrow now!</p>
+          <div class="popup-buttons">
+            <button class="cancel-button" onclick="cancelBorrow()">
+              Cancel
+            </button>
+            <button class="yes-borrow-button" onclick="confirmBorrow()">
+              Borrow
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="info">
+      <ul>
+        <li>ID: 1</li>
+        <br />
+        <li>Country: Mexico</li>
+        <br />
+        <li>Title: "Liliana’s Invincible Summer"</li>
+        <br />
+        <li>Author: Cristina Rivera Garza</li>
+        <br />
+        <li>Genre: Biography, Memoir, Feminism, LatinAmerican Year: 2021</li>
+        <br />
+        <li>
+          Summary: "In this gut-wrenching blend of memoir and reportage, Rivera
+          Garza investigates her younger sister Liliana’s 1990 murder by an
+          abusive ex-boyfriend, who remains at large. Placing her sister’s death
+          in the context of the femicide crisis in Mexico, Rivera Garza
+          documents and recreates the years and months leading up to her murder,
+          interweaving startling facts, case files and newspaper accounts with
+          lyrical meditations on her family life and Liliana’s efforts to break
+          away from her obsessive high school boyfriend. The excerpts from
+          Liliana’s teenage diary and her oft-repeated desire not to be left
+          alone haunt the narrative, as do Rivera Garza’s guilt and shame over
+          her sister’s death."
+        </li>
+        <br />
+        <li>
+          Prizes: Pulitzer Prize for Memoir or Autobiography (2024), Premio
+          Xavier Villaurrutia for Novela (2021), National Book Award Finalist
+          for Non-Fiction (2023)
+        </li>
+        <br />
+        <li>
+          Recommendation: "This book gives us the insight and the language to
+          identify the signs of danger and to see in plain sight how patriarchy
+          deforms and hurts men, as much as it does women. Karen."
+        </li>
+      </ul>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

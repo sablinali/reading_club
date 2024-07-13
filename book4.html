@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+
+    <title>The Hidden Life of Trees</title>
+  </head>
+  <body class="book-info">
+    <div class="image">
+      <img
+        src="./images/hidden_trees.jpg"
+        alt="The Hidden Life of Trees"
+        width="300"
+        height="400"
+      />
+      <div>
+        <p class="borrowP">Find out if it is available to borrow:</p>
+        <br />
+        <button
+          class="borrow-popup-button"
+          id="borrow-button"
+          onclick="borrowFunction()"
+        >
+          Borrow now
+        </button>
+
+        <div class="popuptext" id="borrow-popup">
+          <p>Good news! This book is available to borrow now!</p>
+          <div class="popup-buttons">
+            <button class="cancel-button" onclick="cancelBorrow()">
+              Cancel
+            </button>
+            <button class="yes-borrow-button" onclick="confirmBorrow()">
+              Borrow
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="info">
+      <ul>
+        <li>ID: 4</li>
+        <br />
+        <li>Country: Germany</li>
+        <br />
+        <li>Title: "The Hidden Life of Trees"</li>
+        <br />
+        <li>Author: Peter Wohlleben</li>
+        <br />
+        <li>Genre: Environmental literature, Nature, Forestry, Non-Fiction</li>
+        <br />
+        <li>Year: 2015</li>
+        <br />
+        <li>
+          Summary: "Did you know that trees can communicate with each other and
+          have their own way to nurture each other? If not then this book is for
+          you. Peter Wohlleben describes in his book how trees have a network of
+          communication with each other and how they balance the ecosystem of
+          the woods. This book changes your idea of the woods and their impact
+          on our global ecosystem."
+        </li>
+        <br />
+        <li>
+          Prizes: Australian Book Industry Awards (2017), American Booksellers
+          Association Indies Choice Book Award for Nonfiction (2017), Rob
+          Stewart Eco Warrior Award (2020)
+        </li>
+        <br />
+        <li>
+          Recommendation: "The book changed my view on trees and how important
+          they are to humankind. Peter Wohlleben is a German forest ranger who
+          does not only write from his own experiences but uses also sources.
+          Also if this book is non-fiction, it is very interesting to read.
+          Natascha."
+        </li>
+      </ul>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

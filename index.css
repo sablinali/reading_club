@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: mistyrose;
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 400;
+}
+
+h1 {
+  color: violet;
+  font-weight: bold;
+}
+
+#explore {
+  background-color: pink;
+  border: 1px solid pink;
+  border-radius: 4px;
+  padding: 6px 10px;
+  color: brown;
+  font-weight: bold;
+}
+
+.intro-text {
+  padding: 10px 50px;
+  font-size: 20px;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 500px;
+  gap: 10px;
+
+  > div {
+    flex: 0 0 120px;
+    border-radius: 0.5rem;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    box-shadow: 1px 5px 15px #1e0e3e;
+    position: relative;
+    overflow: hidden;
+
+    &:nth-of-type(1) {
+      background: url("https://raw.githubusercontent.com/firstwoman/smallreadingclub/main/lilianasinvinciblesummer.jpg")
+        no-repeat 50% / cover;
+    }
+    &:nth-of-type(2) {
+      background: url("https://ia600202.us.archive.org/BookReader/BookReaderPreview.php?id=deeprivers00jose&subPrefix=deeprivers00jose&itemPath=/5/items/deeprivers00jose&server=ia600202.us.archive.org&page=leaf1&fail=preview&&scale=4&rotate=0")
+        no-repeat 50% / cover;
+    }
+    &:nth-of-type(3) {
+      background: url("https://kalemkahveklavye.com/wp-content/uploads/2014/03/1saatleri-ayarlama-enstitusu-20.jpg")
+        no-repeat 50% / cover;
+    }
+    &:nth-of-type(4) {
+      background: url("https://m.media-amazon.com/images/I/81-v0NHFZNL._SL1500_.jpg")
+        no-repeat 50% / cover;
+    }
+
+    .content {
+      font-size: 1.5rem;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      padding: 15px;
+      opacity: 0;
+      flex-direction: column;
+      height: 100%;
+      width: 90%;
+      justify-content: flex-end;
+      background: rgb(2, 2, 46);
+      background: linear-gradient(
+        0deg,
+        rgba(2, 2, 46, 0.6755077030812324) 0%,
+        rgba(255, 255, 255, 0) 100%
+      );
+      transform: translatey(100%);
+      transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
+      visibility: hidden;
+
+      span {
+        display: block;
+        margin-top: 5px;
+        font-size: 1.2rem;
+      }
+    }
+
+    &:hover {
+      flex: 0 0 250px;
+      box-shadow: 1px 3px 15px #7645d8;
+      transform: translatey(-30px);
+    }
+
+    &:hover .content {
+      opacity: 1;
+      transform: translatey(0%);
+      visibility: visible;
+    }
+  }
+}
+
+.book-info {
+  display: flex;
+  flex-direction: row;
+  padding: 0px 60px;
+}
+
+.image {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#bookPic {
+  width: 280px;
+  height: 360px;
+}
+
+.borrow-popup-button {
+  width: 30%;
+  padding: 6px 10px;
+  background-color: pink;
+  border: 1px solid pink;
+  border-radius: 4px;
+  color: brown;
+  font-weight: bold;
+}
+
+.info {
+  width: 50%;
+  height: 100%;
+  font-size: 15px;
+}
+
+.borrowP {
+  color: violet;
+}
+
+.popuptext {
+  display: none;
+  position: absolute;
+  background-color: beige;
+  border: 1px solid beige;
+  border-radius: 4px;
+  padding: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+.popuptext.show {
+  display: block;
+}
+
+.popup-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.borrow-button-yellow {
+  background-color: indianred;
+  border: 1px solid indianred;
+  border-radius: 4px;
+  font-weight: bold;
+  width: 30%;
+  padding: 6px 10px;
+}
+
+.cancel-button {
+  background-color: cadetblue;
+  border: 1px solid cadetblue;
+  border-radius: 4px;
+  padding: 4px 6px;
+  font-weight: bold;
+}
+
+.yes-borrow-button {
+  background-color: hotpink;
+  border: 1px solid hotpink;
+  border-radius: 4px;
+  padding: 4px 6px;
+  font-weight: bold;
+}
